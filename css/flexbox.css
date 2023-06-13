@@ -1,0 +1,121 @@
+/* HEADER */
+.headerPrincipal .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.headerPrincipal-nav-link {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .headerPrincipal .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .headerPrincipal-titulo {
+        width: 90%;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: row;
+    }
+}
+
+/* SECTION COURSES */
+.cursos {
+    margin-bottom: 20px;
+}
+
+.contenidoPrincipal-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+@media(min-width: 768px) {
+    .contenidoPrincipal-cursos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* SECTION VIDEO */
+.videoSobre .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.videoSobre-button {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .videoSobre .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .videoSobre-sobre {
+        margin: 0;
+        gap: 5px;
+    }
+}
+
+/* COURSES MAP */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 768px) {
+    .rodapePrincipal-navMap-list {
+        flex-wrap: wrap;
+        height: 260px;
+    }
+}
+
+/* FOOTER */
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .rodapePrincipal-patrocinadores .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 70%;
+        margin-right: 5%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 25%;
+    }
+}
